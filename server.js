@@ -19,7 +19,7 @@ app.use(
     optionsSuccessStatus: 200,
   })
 );
-
+app.get("/",(req,res) =>{ res.json({messsage:"HEllo"})}
 app.use(
   '/public/uploads/profile',
   express.static(path.join(__dirname, '/public/uploads/profile'))
